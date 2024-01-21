@@ -1,5 +1,11 @@
+:root {
+  --primaryParagraphColor: #b7abab;
+  --boldPrimaryParagraphColor: #a897b0;
+}
+
 body {
   background-color: #2a282b;
+  font-family: "Poppins", sans-serif;
   color: white;
 }
 
@@ -10,16 +16,70 @@ body {
 }
 
 .header_title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5px;
+  width: 157px;
+}
+
+.header_title_word {
   font-size: 40px;
   font-style: bold;
+  margin: 0;
+  height: 33px;
+}
+
+.header_bar {
+  margin-top: 15px;
 }
 
 .header_list {
   list-style: none;
   display: flex;
+  padding-left: 0px;
   gap: 64px;
+  margin-top: 8px;
+}
+
+.header_list li {
+  font-weight: 600;
+  font-size: 16px;
+}
+.header_bar span {
+  font-weight: bolder;
+}
+
+.line {
+  width: 1201px;
+  opacity: 10%;
+  margin-bottom: 53px;
 }
 
 .main_container {
   display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.main_container_information {
+  padding-left: 43px;
+  padding-right: 43px;
+}
+
+.main_container_information h1 {
+  font-size: 56px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.information_basic {
+  color: var(--primaryParagraphColor);
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+.information_accented {
+  color: var(--boldPrimaryParagraphColor);
+  font-weight: 600;
 }

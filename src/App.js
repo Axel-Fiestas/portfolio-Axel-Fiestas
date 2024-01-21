@@ -4,6 +4,7 @@ function App() {
   return (
     <div>
       <Header />
+      <hr className="line"></hr>
       <MainPart />
       <SkillSection />
       <Proyects />
@@ -14,9 +15,12 @@ function App() {
 function Header() {
   return (
     <header className="header">
-      <div className="header_title">axel.fiestas</div>
-      <div>
-        <div>Bienvenido</div>
+      <div className="header_title">
+        <h1 className="header_title_word">axel.</h1>
+        <h1 className="header_title_word">Fiestas</h1>
+      </div>
+      <div className="header_bar">
+        <span>Bienvenido</span>
         <div>
           <ul className="header_list">
             <li>0.1 Home</li>
@@ -42,11 +46,12 @@ function MainPart() {
           </ul>
         </div>
       </div>
-      <div>
+      <div className="main_container_information">
         <h1>Hola, Soy Axel</h1>
-        <p>
+        <p className="information_basic">
           Soy un estudiante apasionado de Ingeniería de Software que ha estado
-          inmerso en esta carrera desde el año 2020. Desde siempre, mi
+          inmerso en esta carrera desde el año{" "}
+          <span className="information_accented">2020.</span>Desde siempre, mi
           curiosidad por comprender cómo se llevan a cabo las cosas en el ámbito
           del software ha sido una fuente constante de motivación. Esta
           fascinación me ha impulsado a profundizar en los conocimientos y
@@ -57,17 +62,20 @@ function MainPart() {
           de contribuir al mundo de la tecnología. Disfruto tanto del desarrollo
           frontend como del backend, pero siento una conexión especial con el
           backend. Mi experiencia incluye la exploración de fundamentos de
-          programación, diseño de patrones de software y conceptos clave en
-          arquitectura de software, abarcando desde arquitecturas monolíticas
-          hasta enfoques más modernos como microservicios. Esta diversidad de
-          conocimientos me permite tener una visión integral y adaptativa al
-          enfrentarme a proyectos y problemas complejos en el ámbito de la
-          ingeniería de software. A medida que avanzo en mi carrera, estoy
-          comprometido a seguir aprendiendo y evolucionando, siempre dispuesto a
-          enfrentar nuevos retos y aportar soluciones innovadoras al mundo
-          tecnológico. Mi portafolio refleja no solo mi habilidad técnica, sino
-          también mi enfoque apasionado y mi deseo constante de superación en el
-          campo de la Ingeniería de Software.
+          programación,
+          <span className="information_accented">
+            diseño de patrones de software y conceptos clave en arquitectura de
+            software, abarcando desde arquitecturas monolíticas hasta enfoques
+            más modernos como microservicios.
+          </span>
+          Esta diversidad de conocimientos me permite tener una visión integral
+          y adaptativa al enfrentarme a proyectos y problemas complejos en el
+          ámbito de la ingeniería de software. A medida que avanzo en mi
+          carrera, estoy comprometido a seguir aprendiendo y evolucionando,
+          siempre dispuesto a enfrentar nuevos retos y aportar soluciones
+          innovadoras al mundo tecnológico. Mi portafolio refleja no solo mi
+          habilidad técnica, sino también mi enfoque apasionado y mi deseo
+          constante de superación en el campo de la Ingeniería de Software.
         </p>
       </div>
     </div>
