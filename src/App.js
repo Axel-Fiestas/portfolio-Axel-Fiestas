@@ -1,5 +1,14 @@
 import "./App.css";
 import PictureMe from "./assets/AxelF.png";
+import Linkedin from "./assets/Linkedin.png";
+import Github from "./assets/Github.png";
+import C from "./assets/c#.png";
+import git from "./assets/git.png";
+import docker from "./assets/docker.png";
+import python from "./assets/python.png";
+import java from "./assets/java.png";
+import springBoot from "./assets/springboot.png";
+import sql from "./assets/sql.png";
 function App() {
   return (
     <div>
@@ -38,11 +47,15 @@ function MainPart() {
   return (
     <div className="main_container">
       <div>
-        <img src={PictureMe}></img>
-        <div>
+        <img src={PictureMe} alt={PictureMe}></img>
+        <div className="red_socials">
           <ul>
-            <li>Logo Linkedin</li>
-            <li>Logo Github</li>
+            <li>
+              <img className="linkedin" src={Linkedin} alt={Linkedin}></img>
+            </li>
+            <li>
+              <img className="github" src={Github} alt={Github}></img>
+            </li>
           </ul>
         </div>
       </div>
@@ -83,17 +96,38 @@ function MainPart() {
 }
 function SkillSection() {
   return (
-    <div>
-      <h2>0.2 Skills</h2>
-      <div>
+    <div className="skills_container">
+      <h2 className="skills_title">0.2 Skills && Tools</h2>
+      <div className="skills_list">
         <ul>
-          <li>Git & Github</li>
-          <li>Docker</li>
-          <li>C#</li>
-          <li>Python</li>
-          <li>Java</li>
-          <li>SpringBoot</li>
-          <li>SQL</li>
+          <li>
+            <img src={git} alt={git}></img>
+            Git & Github
+          </li>
+          <li>
+            <img src={docker} alt={docker}></img>
+            Docker
+          </li>
+          <li>
+            <img src={C} alt={C}></img>
+            C#
+          </li>
+          <li>
+            <img src={python} alt={python}></img>
+            Python
+          </li>
+          <li>
+            <img src={java} alt={java}></img>
+            Java
+          </li>
+          <li>
+            <img src={springBoot} alt={springBoot}></img>
+            SpringBoot
+          </li>
+          <li>
+            <img src={sql} alt={sql}></img>
+            SQL
+          </li>
         </ul>
       </div>
     </div>

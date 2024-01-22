@@ -83,3 +83,32 @@ body {
   color: var(--boldPrimaryParagraphColor);
   font-weight: 600;
 }
+
+.red_socials ul {
+  list-style: none;
+  display: flex;
+}
+.github {
+  position: relative;
+  left: 5px;
+  bottom: 5px;
+}
+
+.skills_container {
+  margin: 0px 10%;
+}
+
+.skills_list ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.skills_list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skills_list img {
+  width: 57px;
+}
