@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Shuffler",
+    "date": "24 Nov. 2020",
+    "description": "Desarrollé un proyecto utilizando Python y TKinter para la interfaz gráfica de usuario. Esta aplicación te brinda la capacidad de recibir recomendaciones de canciones a partir de una selección hecha por el usuario. Para la obtención del conjunto de datos, utilicé la API de Spotify, implementando algoritmos como el de fuerza bruta y conjuntos disjuntos para procesar la información y proporcionar recomendaciones musicales personalizadas.",
+    "github": "https://github.com/Axel-Fiestas/ShufflerProject-Complejidad-Algoritmica-UPC",
+    "image": "https://i.ibb.co/h9ww74n/Screenshot-2024-02-22-144137.png",
+    "hasDemo": false,
+    "linkDemo": ""
+  },
+  {
+    "name": "API TuCine",
+    "date": "22 Nov. 2023",
+    "description": "WEB API utilizada para una aplicación web. Se utilizó el lenguaje de programación JAVA junto con el framework de SpringBoot, usando ,en primera instancia, una arquitectura monolítica que luego fue migrada a microservicos. Posteriormente se realizó un despliegue utilizado instancia EC2 de Ubuntu(Linux)en AWS y utilizando Docker para implementar la aplicación rapidamente en la instancia. Como funciones extras, se logró establecer conexión con APIs externas como The Movie Database (TMDB)",
+    "github": "https://github.com/orgs/SW72-TuCine/repositories",
+    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202106/Screenshot_2021-06-17_at_9.16._1200x768.png?size=690:388",
+    "hasDemo": false,
+    "linkDemo": ""
+  },
+  {
+    "name": "TodoApp",
+    "date": "10 Feb. 2024",
+    "description": "Desarrollé una simple aplicación TodoList que permite agregar, borrar y cambiar el estado de Tareas. Fue realizado usando React para el frontend y para la API REST se utilizó Java junto a SpringBoot, el deploy del backend fue realizado en Render utilizando Docker como medio",
+    "github": "https://github.com/Axel-Fiestas/ToDoList.git",
+    "image": "https://i.ibb.co/XknLcJM/Screenshot-2024-02-22-141513.png",
+    "hasDemo": true,
+    "linkDemo": "https://ornate-torte-ec3b02.netlify.app/"
+  }
+]

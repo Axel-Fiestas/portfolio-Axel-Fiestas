@@ -1,0 +1,23 @@
+:root {
+  --primaryParagraphColor: #b7abab;
+  --boldPrimaryParagraphColor: #a897b0;
+}
+
+.css-button-sharp--blue {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 2px solid #000000;
+  background: #a897b0;
+}
+.css-button-sharp--blue:hover {
+  background: #fff;
+  color: #000000;
+}

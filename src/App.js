@@ -9,6 +9,9 @@ import python from "./assets/python.png";
 import java from "./assets/java.png";
 import springBoot from "./assets/springboot.png";
 import sql from "./assets/sql.png";
+import "./Button.css";
+import proyectos from "./projects.json";
+
 function App() {
   return (
     <div>
@@ -17,6 +20,7 @@ function App() {
       <MainPart />
       <SkillSection />
       <Proyects />
+      <Footer />
     </div>
   );
 }
@@ -136,20 +140,87 @@ function SkillSection() {
 
 function Proyects() {
   return (
-    <div>
-      Imagen
-      <h2>Shuffler</h2>
-      <p>24 Nov. 2020</p>
-      <p>
-        Desarrollé un proyecto utilizando Python y TKinter para la interfaz
-        gráfica de usuario. Esta aplicación te brinda la capacidad de recibir
-        recomendaciones de canciones a partir de una selección hecha por el
-        usuario. Para la obtención del conjunto de datos, utilicé la API de
-        Spotify, implementando algoritmos eficientes como el de fuerza bruta
-        para procesar la información y proporcionar recomendaciones musicales
-        personalizadas
-      </p>
+    <div className="projects_container">
+      <h2>0.3 Proyectos</h2>
+      <div className="project-container">
+        {proyectos.map((proyecto, index) => (
+          <div className="project" key={index}>
+            <h3>{proyecto.name}</h3>
+            <p>{proyecto.date}</p>
+            <p>{proyecto.description}</p>
+            <img src={proyecto.image} alt="Imagen del proyecto" />
+            <div className="projects_buttons">
+              <button
+                className="css-button-sharp--blue"
+                onClick={() => window.open(proyecto.github, "_blank")}
+              >
+                CODIGO FUENTE
+              </button>
+              {proyecto.hasDemo ? (
+                <button
+                  className="css-button-sharp--blue"
+                  onClick={() => window.open(proyecto.linkDemo, "_blank")}
+                >
+                  DEMO
+                </button>
+              ) : null}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer_content">
+        <div className="footer_col">
+          <h4>Links útiles</h4>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Acerca de</a>
+            </li>
+            <li>
+              <a href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer_col">
+          <h4>Redes sociales</h4>
+          <ul>
+            <li>
+              <a href="#">
+                <i className="fab fa-facebook-f"></i> Facebook
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i className="fab fa-twitter"></i> Twitter
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i className="fab fa-instagram"></i> Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer_col">
+          <h4>Contacto</h4>
+          <p>Dirección: 123 Calle, Ciudad, País</p>
+          <p>Teléfono: 123-456-7890</p>
+          <p>Email: correo@example.com</p>
+        </div>
+      </div>
+      <div className="footer_bottom">
+        <p>&copy; 2022 Tu Empresa</p>
+      </div>
+    </footer>
   );
 }
 
