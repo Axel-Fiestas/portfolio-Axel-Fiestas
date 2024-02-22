@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  margin-left: 128px;
+  gap: 26px;
+}
+
+.header_title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5px;
+  width: 157px;
+}
+
+.header_title_word {
+  font-size: 40px;
+  font-style: bold;
+  margin: 0;
+  height: 33px;
+}
+
+.header_bar {
+  margin-top: 15px;
+}
+
+.header_list {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+  gap: 64px;
+  margin-top: 8px;
+}
+
+.header_list li {
+  font-weight: 600;
+  font-size: 16px;
+}
+.header_bar span {
+  font-weight: bolder;
+}

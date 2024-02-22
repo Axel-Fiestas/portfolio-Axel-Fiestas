@@ -10,7 +10,9 @@ import java from "./assets/java.png";
 import springBoot from "./assets/springboot.png";
 import sql from "./assets/sql.png";
 import "./Button.css";
-import proyectos from "./projects.json";
+import Projects from "./components/proyects/Projects";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -19,31 +21,10 @@ function App() {
       <hr className="line"></hr>
       <MainPart />
       <SkillSection />
-      <Proyects />
+      <Projects />
+      <Education />
       <Footer />
     </div>
-  );
-}
-
-function Header() {
-  return (
-    <header className="header">
-      <div className="header_title">
-        <h1 className="header_title_word">axel.</h1>
-        <h1 className="header_title_word">Fiestas</h1>
-      </div>
-      <div className="header_bar">
-        <span>Bienvenido</span>
-        <div>
-          <ul className="header_list">
-            <li>0.1 Home</li>
-            <li>0.2 Skills</li>
-            <li>0.3 Proyectos</li>
-            <li>0.4 Educación</li>
-          </ul>
-        </div>
-      </div>
-    </header>
   );
 }
 
@@ -98,6 +79,7 @@ function MainPart() {
     </div>
   );
 }
+
 function SkillSection() {
   return (
     <div className="skills_container">
@@ -138,89 +120,11 @@ function SkillSection() {
   );
 }
 
-function Proyects() {
+function Education() {
   return (
-    <div className="projects_container">
-      <h2>0.3 Proyectos</h2>
-      <div className="project-container">
-        {proyectos.map((proyecto, index) => (
-          <div className="project" key={index}>
-            <h3>{proyecto.name}</h3>
-            <p>{proyecto.date}</p>
-            <p>{proyecto.description}</p>
-            <img src={proyecto.image} alt="Imagen del proyecto" />
-            <div className="projects_buttons">
-              <button
-                className="css-button-sharp--blue"
-                onClick={() => window.open(proyecto.github, "_blank")}
-              >
-                CODIGO FUENTE
-              </button>
-              {proyecto.hasDemo ? (
-                <button
-                  className="css-button-sharp--blue"
-                  onClick={() => window.open(proyecto.linkDemo, "_blank")}
-                >
-                  DEMO
-                </button>
-              ) : null}
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="education_container">
+      <h2>0.4 Education</h2>
     </div>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="footer">
-      <div className="footer_content">
-        <div className="footer_col">
-          <h4>Links útiles</h4>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Acerca de</a>
-            </li>
-            <li>
-              <a href="#">Contacto</a>
-            </li>
-          </ul>
-        </div>
-        <div className="footer_col">
-          <h4>Redes sociales</h4>
-          <ul>
-            <li>
-              <a href="#">
-                <i className="fab fa-facebook-f"></i> Facebook
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-twitter"></i> Twitter
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="fab fa-instagram"></i> Instagram
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className="footer_col">
-          <h4>Contacto</h4>
-          <p>Dirección: 123 Calle, Ciudad, País</p>
-          <p>Teléfono: 123-456-7890</p>
-          <p>Email: correo@example.com</p>
-        </div>
-      </div>
-      <div className="footer_bottom">
-        <p>&copy; 2022 Tu Empresa</p>
-      </div>
-    </footer>
   );
 }
 

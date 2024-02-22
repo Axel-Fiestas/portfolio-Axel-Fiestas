@@ -1,0 +1,39 @@
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+
+.projects_container {
+  margin: 0px 10%;
+  margin-bottom: 5rem;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project p {
+  margin-bottom: 0;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.projects_buttons {
+  display: flex;
+  justify-content: center;
+}
